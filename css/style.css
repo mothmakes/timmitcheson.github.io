@@ -530,6 +530,10 @@ Rounded Images
     font-size: 16px;
 }
 
+.about .badges {
+    padding-top: 10px;
+}
+
 .about .languages-text p {
     font-size: 16px;
     text-align: right;
@@ -545,9 +549,27 @@ Rounded Images
 
 .about .language-name p {
     display: inline-block;
-    margin-bottom: 5px;
-    font-size: 16px;
+    margin-bottom: 20px;
+    height: 25px;
+    font-size: 20px;
     font-weight: 400;
+}
+
+.about .language-name h2 {
+    float: right;
+}
+
+.about .language-name p:last-child {
+    float: right;
+    font-size: 25px;
+    font-weight: 800;
+    color:#7a49ee
+}
+
+.about .languages .progress {
+    height: 4px;
+    border-radius: 10px;
+    background: #dddddd;
 }
 
 .about .skills {
