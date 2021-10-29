@@ -42,7 +42,7 @@
     
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
-        if (this.hash !== "") {
+        if (this.hash !== "" && this.href.includes(window.location.href)) {
             event.preventDefault();
             
             $('html, body').animate({

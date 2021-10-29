@@ -225,7 +225,7 @@ Rounded Images
     }
 }
 
-@media (max-width: 991.98px) {   
+@media (max-width: 991.98px) and (min-width:623px) {   
     .navbar {
         padding: 15px;
         background: #0c0c0c !important;
@@ -250,6 +250,24 @@ Rounded Images
     
     .navbar .dropdown-menu {
         box-shadow: none;
+    }
+}
+
+@media (max-width: 623px) {
+    .navbar {
+        padding: 15px;
+        background: #0c0c0c !important;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 25px;
+        color: #6023ef;
+    }
+    .navbar .navbar-brand a {
+        display:none;
+    }
+    .navbar .navbar-brand img {
+        display:none;
     }
 }
 
@@ -614,6 +632,142 @@ Rounded Images
     }
 }
 
+/* Shifitng Sands */
+
+.shiftingsands {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 25px 0 15px 0;
+}
+
+.shiftingsands .gms2 img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shiftingsands .btn {
+    padding: 20px;
+    margin: 15px;
+}
+
+.shiftingsands .ss-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Slideshow */
+
+.slideshow {
+    box-sizing:border-box;
+}
+
+.slideshow .container {
+    padding: 200px 0 20px 0;
+}
+
+@media (max-width: 991.98px) {
+    .slideshow .container {
+        padding: 45px 15px 0 15px;
+    }
+}
+
+/* Slideshow container */
+.slideshow .slideshow-container {
+    max-width: 50vw;
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the images by default */
+.slideshow .mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.slideshow .prev, .slideshow .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.slideshow .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.slideshow .prev:hover, .slideshow .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.slideshow .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.slideshow .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.slideshow .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.slideshow .active, .slideshow .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.slideshow .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
 
 /*******************************/
 /******* Experience CSS ********/
@@ -789,6 +943,7 @@ Rounded Images
         border-left: 5px solid #dddddd;
     }
 }
+
 
 
 /*******************************/

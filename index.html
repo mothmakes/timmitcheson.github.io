@@ -8,7 +8,7 @@
         <meta content="Free Website Template" name="description">
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link href="img/favicon/favicon.ico" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <body data-spy="scroll" data-target=".navbar" data-offset="51" id="homePage">
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
@@ -39,8 +39,8 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="#shiftingsands" class="nav-item nav-link">Shifting Sands</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="shiftingsands.html" class="nav-item nav-link">Shifting Sands</a>
                         <a href="#mini2dengine" class="nav-item nav-link">Mini2DEngine</a>
                         <a href="#otherprojects" class="nav-item nav-link">Other Projects</a>
                         <a href="#cv" class="nav-item nav-link">CV</a>
@@ -65,7 +65,9 @@
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
                         <div class="hero-image">
-                            <img src="img/Tree.png" alt="Hero Image">
+                            <a href="#alchemia">
+                                <img src="img/AlchemiaBack_Back.png" alt="Hero Image">
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
@@ -150,11 +152,11 @@
                                     </div>
                                 </div> -->
                                 
-                                <a class="btn" href="about.html">Learn More</a>
+                                <!-- <a class="btn" href="about.html">Learn More</a> -->
                                 <br>
 
                                 <div class="container-fluid badges">
-                                    <!-- <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="55c7e172-9fd1-4f12-b61a-dd4f88d7ada4" data-share-badge-host="https://www.credly.com"></div> -->
+                                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="55c7e172-9fd1-4f12-b61a-dd4f88d7ada4" data-share-badge-host="https://www.credly.com"></div>
                                 </div>
                             </div>
                         </div>
@@ -221,6 +223,46 @@
             </div>
         </div>
         <!-- About End -->
+
+        <!-- Shifting Sands Start -->
+        <div class="shiftingsands">
+            <div class="container">
+                <div class="section-header text-left wow zoomIn" data-wow-delay="0.1s">
+                    <p>Main Project</p>
+                    <h2>Shifting Sands</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="shiftingsands-text">
+                            My main game project, Shifting Sands is a puzzle platformer
+                            inspired by works such as Hollow Knight and Celeste. Made with Gamemaker
+                            Studio 2, with art, design, shaders, and code made by me. 
+                            <br><br>
+                            It follows the yound Dr Kai Izem, a doctor of cultural anthropology,
+                            as he is asked to investigate some ruins found the Libyan Sahara.
+                            <br><br>
+                            Soon he is thrust into a strange underground world, filled
+                            with magic and strange creatures. Using a new found ability
+                            to shift his place in time, he must solve temporal puzzles and
+                            boolean algebra to escape.
+                        </div>
+                        <div class="wow fadeInUp gms2" data-wow-delay="0.0s">
+                            <img src="img/gms2.png" alt="Gamemaker Studio 2 Logo">
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp ss-img" data-wow-delay="0.0s">
+                        <img src="img/ss.jpg" alt="Shifting Sands">
+                    </div>
+                </div>
+                <div class="row wow" data-wow-delay="0.0s">
+                    <a class="btn" href="shiftingsands.html">Learn More</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Shifting Sands End-->
         
         
         <!-- Service Start -->
@@ -290,7 +332,7 @@
         
         
          <!-- Experience Start -->
-        <div class="experience" id="experience">
+        <!-- <div class="experience" id="experience">
             <div class="container">
                 <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Resume</p>
@@ -359,7 +401,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Job Experience End -->
         
         
