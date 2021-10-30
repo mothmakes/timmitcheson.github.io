@@ -41,7 +41,16 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="shiftingsands.html" class="nav-item nav-link">Shifting Sands</a>
-                        <a href="#mini2dengine" class="nav-item nav-link">Mini2DEngine</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Mini2DEngine
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="mini2dengine.html#m2dPage">Overview</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="mini2dengine.html#asteroids">Asteroids</a>
+                            </div>
+                        </li>
                         <a href="#otherprojects" class="nav-item nav-link">Other Projects</a>
                         <a href="#cv" class="nav-item nav-link">CV</a>
 <!--                         <a href="#service" class="nav-item nav-link">Service</a>
@@ -264,71 +273,56 @@
 
         <!-- Shifting Sands End-->
         
-        
-        <!-- Service Start -->
-        <div class="service" id="service">
+        <!-- Mini2dengine Start -->
+
+        <div class="mini2dengine">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>What I do</p>
-                    <h2>Awesome Quality Services</h2>
+                <div class="section-header text-right wow zoomIn" data-wow-delay="0.1s">
+                    <p>Finished Project</p>
+                    <h2>Mini2DEngine</h2>
                 </div>
-                <div class="row">
+                <div class="row align-items-start">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop"></i>
+                        <img class="mini2d-img" src="img/mini2d_asteroids.jpg" alt="Asteroids Recreation">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="row">
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                                <img class="mini2d-img" src="img/SDL_logo.png" alt="SDL2">
                             </div>
-                            <div class="service-text">
-                                <h3>Web Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                                <img class="mini2d-img" src="img/c++logo.png" alt="C++">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
+                        <div class="row">
+                            <div class="mini2dengine-text">
+                                Mini2DEngine was my first foray into C++ in game development. I believe
+                                that developing games without an engine is one of the best ways to
+                                learn a new language, and decided to create a rudimentary 2D game engine
+                                to practice the core components of C++, such as memory-management.
+                                <br><br>
+                                Mini2DEngine manages object lifespans, levels, the basic game loop,
+                                object interaction, encapsulation, sprites, text and keyboard and mouse I/O.
+                                This allows the creation of simple games such as the Asteroids recreation I
+                                producing using the engine. There are many possibilities for expansion, but
+                                for now it is finished.
+                                <br><br>
+                                Core systems were designed based on the Gamemaker engine, and it uses a library
+                                called Simple Dynamic media Layer (SDL) to streamline complex processes.
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-apple"></i>
+                        <div class="row">
+                            <div class="col-lg-6" data-wow-delay="0.0s">
+                                <a class="btn" href="mini2dengine.html">Learn More</a>
                             </div>
-                            <div class="service-text">
-                                <h3>Apps Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
+                        </div>           
                     </div>
+                    
                 </div>
+                
+                
             </div>
         </div>
-        <!-- Service End -->
         
         
          <!-- Experience Start -->
@@ -876,10 +870,8 @@
                             <p>timothy.mitcheson@warwick.ac.uk</p>
                         </div>
                         <div class="footer-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100073429483979"><i class="fab fa-facebook-f"></i></a>
                             <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
                             <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>

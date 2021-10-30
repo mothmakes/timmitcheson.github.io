@@ -178,6 +178,11 @@ Rounded Images
     background: #222222;
 }
 
+
+.navbar .dropdown-menu a{
+    color: #ffffff;
+}
+
 @media (min-width: 992px) {
     .navbar {
         position: absolute;
@@ -630,6 +635,36 @@ Rounded Images
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
+}
+
+/* Mini2dengine */
+
+.mini2dengine {
+    position: relative;
+    width: 100%;
+    padding: 25px 0 15px 0;
+}
+
+#m2dPage.mini2dengine {
+    position: relative;
+    width: 100%;
+    padding: 200px 0 15px 0;
+}
+
+.mini2dengine .mini2d-img {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    object-fit: scale-down;
+}
+
+.mini2dengine .btn {
+    padding: 20px;
+    margin: 0px;
+}
+
+.mini2dengine .mini2dengine-text {
+    padding: 20px;
 }
 
 /* Shifitng Sands */

@@ -41,7 +41,16 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="index.html#about" class="nav-item nav-link">About</a>
                         <a href="shiftingsands.html" class="nav-item nav-link active">Shifting Sands</a>
-                        <a href="#mini2dengine" class="nav-item nav-link">Mini2DEngine</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Mini2DEngine
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="mini2dengine.html#m2dPage">Overview</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="mini2dengine.html#asteroids">Asteroids</a>
+                            </div>
+                        </li>
                         <a href="#otherprojects" class="nav-item nav-link">Other Projects</a>
                         <a href="#cv" class="nav-item nav-link">CV</a>
 <!--                         <a href="#service" class="nav-item nav-link">Service</a>
@@ -164,8 +173,82 @@
                         <img class="ss-img" src="img/ss.jpg" alt="Shifting Sands">
                     </div>
                 </div>
+                <div class="row wow" data-wow-delay="0.0s">
+                    <a class="btn" href="https://github.com/timmitcheson/shifting-sands">Github</a>
+                </div>
             </div>
         </div>
+
+        <!-- Service Start -->
+        <div class="service" id="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>What I'm Learning</p>
+                    <h2>Skill Development</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Game Programming</h3>
+                                <p>
+                                    I'm programming the game using GML, and lessons learned here
+                                    can be applied elsewhere. I am self-taught using the documentation provided, and the lively community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-map"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Game Design</h3>
+                                <p>
+                                    I'm designing the game from its roots upwards, learning the game design process
+                                    as I go. As this is a project aimed at learning, the design process runs along side
+                                    the development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-pencil-alt"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Pixelart</h3>
+                                <p>
+                                    I'm producing all art in the game, focusing on pixelart made in Aseprite. Self-taught, using resources
+                                    available on YouTube and beyond, it is challenging but immensely satisfying.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-share"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Perserverance</h3>
+                                <p>
+                                    As my first large-scale project, I am learning to keep pushing myself further,
+                                    even when the going gets tough. I take great pride in my ability to always find
+                                    a way forward.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
 
         <!-- Footer Start -->
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
@@ -220,6 +303,6 @@
         <script src="mail/contact.js"></script>
 
         <!-- Template Javascript -->
-        <script src="js/basic.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
