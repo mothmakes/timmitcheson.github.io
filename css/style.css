@@ -709,7 +709,7 @@ Rounded Images
     background: #0c0c0c;
     position: relative;
     width: 100%;
-    padding: 200px 0 15px 0;
+    padding: 25px 0 15px 0;
 }
 
 .alchemia .logo img {
@@ -751,6 +751,33 @@ Rounded Images
 }
 
 .wgd2021welcome .i-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+/* unitylearn */
+
+.unitylearn {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 200px 0 15px 0;
+}
+
+.unitylearn .inhabition img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.unitylearn .btn {
+    padding: 20px;
+    margin: 15px;
+}
+
+.unitylearn .i-img {
     position: relative;
     width: 100%;
     height: 100%;
