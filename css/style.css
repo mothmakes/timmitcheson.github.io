@@ -183,7 +183,7 @@ Rounded Images
     color: #ffffff;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1154px) {
     .navbar {
         position: absolute;
         width: 100%;
@@ -230,7 +230,7 @@ Rounded Images
     }
 }
 
-@media (max-width: 991.98px) and (min-width:623px) {   
+@media (max-width: 1200px) and (min-width:992px) {   
     .navbar {
         padding: 15px;
         background: #0c0c0c !important;
@@ -258,7 +258,7 @@ Rounded Images
     }
 }
 
-@media (max-width: 623px) {
+@media (max-width: 992px) {
     .navbar {
         padding: 15px;
         background: #0c0c0c !important;
@@ -730,6 +730,61 @@ Rounded Images
     object-fit: scale-down;
 }
 
+/* WGD 2021 Welcome */
+
+.wgd2021welcome {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 200px 0 15px 0;
+}
+
+.wgd2021welcome .inhabition img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.wgd2021welcome .btn {
+    padding: 20px;
+    margin: 15px;
+}
+
+.wgd2021welcome .i-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+/* CV */
+
+.cv {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 200px 0 15px 0;
+}
+
+.cv .btn {
+    padding: 20px;
+    margin: 15px;
+}
+
+/* website */
+
+.website {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 200px 0 15px 0;
+}
+
+.website .btn {
+    padding: 20px;
+    margin: 15px;
+}
+
 /* Shifitng Sands */
 
 .shiftingsands {
@@ -976,10 +1031,28 @@ Rounded Images
 /*******************************/
 /********* Contact CSS *********/
 /*******************************/
+.contact-info {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 200px 0 35px 0;
+}
+
+.contact-info .btn {
+    padding: 20px;
+    margin: 15px;
+}
+
 .contact {
     position: relative;
     width: 100%;
     margin: 45px 0;
+    background: #6023ef;
+}
+
+#contactPage.contact {
+    position: relative;
+    width: 100%;
     background: #6023ef;
 }
 
