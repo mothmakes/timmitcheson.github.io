@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>WGD Welcome Jam 2021 | timmitcheson</title>
+        <title>IDE | timmitcheson</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Tim Mitcheson Portfolio Game Developer Game Design C++ Java" name="keywords">
         <meta content="Tim Mitcheson, Game Developer, Computer Science Student. I make games using C++, Gamemaker, and Unity." name="description">
@@ -24,7 +24,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51" id="homePage">
+    <body data-spy="scroll" data-target=".navbar" data-offset="51" id="idePage">
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
@@ -79,41 +79,126 @@
         </div>
         <!-- Nav Bar End -->
 
-        <!-- WGD Welcome Jam -->
-        <div class="wgd2021welcome">
+        <!-- Slideshow Start -->
+        <div class="slideshow">
+            <div class="container">
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img/idegal1.jpg" style="width:100%">
+                    <div class="text">An example of the main monitor UI</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img/idegal2.jpg" style="width:100%">
+                    <div class="text">An example of the main monitor UI with a different location</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="img/idegal3.jpg" style="width:100%">
+                    <div class="text">The secondary monitor UI</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="img/idegal4.jpg" style="width:100%">
+                    <div class="text">The main interfaces</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="img/idegal5.jpg" style="width:100%">
+                    <div class="text">The secondary monitor wallpaper selector</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
+            </div>
+        </div>
+        <!-- Slideshow End -->
+
+        <!-- Interactive Desktop Environment Start -->
+        <div class="ide" id="ide">
             <div class="container">
                 <div class="section-header text-left wow zoomIn" data-wow-delay="0.1s">
-                    <p>Game Jam</p>
-                    <h2>WGD Welcome Jam 2021</h2>
+                    <p>Finished Project</p>
+                    <h2>Interactive Desktop Environment</h2>
                 </div>
                 <div class="row align-items-start">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="wgd2021welcome-text">
-                            My first ever game jam, I produced a procedurally generated
-                            dungeon crawler with an enemy takeover mechanic in a team of
-                            three. The jam was the first event of the year for the Warwick
-                            Game Design Society, and the theme was "new experiences".
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="ide-text">
+                            Designed as a skin for Rainmeter, a desktop customization tool, and using Lua for Scripting, my IDE is
+                            a way to quickly access frequently used applications and data in a visually
+                            appealing overlay for a desktop. It allows a user to change between live
+                            wallpapers, see a count of their emails and access them, maintain a to-do
+                            list, shutdown/restart/logoff from their PC, and even their own network
+                            of connected devices (and control them).
                             <br><br>
-                            Called Inhabition, the game was mostly programmed by myself,
-                            with art and additional programming by my teammates Daniel and
-                            Icen. It was made with Gamemaker Studio 2, and I had to teach
-                            the others the engine as we progressed through the jam.
+                            Based on the UI from Elite: Dangerous, this personal project was specialised
+                            towards my needs and devices. I wanted to be able to set the mood of my
+                            virtual environment without having to interact with many different menus.
                             <br><br>
-                            The game is functional and complete (for a game jam game), but
-                            it is far from an enjoyable experience. However, I am proud of
-                            our team and what we accomplished in our first ever attempt at
-                            a game within 24 hours. You can access the game on itch.io and
-                            Github by following the links below.
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <img class="i-img" src="img/inhabition_screenshot.png" alt="Inhabition">
+                            The system uses Lua scripts to perform the more dynamic aspects of the 
+                            interface. The to-do list modifies a text file using Lua scripting, and the
+                            wallpaper swapping and returning location specific information is also performed
+                            throught Lua scripting. I use <a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/">Wallpaper Engine</a>
+                            to display the live wallpapers, and Lua scripts perform console commands to
+                            direct Wallpaper Engine to change wallpaper.
+                            <br><br>
+                            This is a highly specialised system, and I do not currently have
+                            any intent to distribute the source code. However, I have provided a demonstration
+                            video on my YouTube channel, and you can access this at the link below.
+                        </div>               
                     </div>
                 </div>
                 <div class="row wow" data-wow-delay="0.0s">
-                    <a class="btn" href="https://github.com/timmitcheson/untitled-slime-game"><i class="fab fa-github"></i> Github</a>
-                    <a class="btn" href="https://danielilett.itch.io/inhabition">itch.io</a>
+                    <a class="btn" href="https://youtu.be/7IVRkaXvKxY"><i class="fab fa-youtube"></i> YouTube Demo</a>
                 </div>
+                
             </div>
         </div>
 
@@ -163,7 +248,6 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
         
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>

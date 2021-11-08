@@ -696,10 +696,43 @@ Rounded Images
     padding: 20px;
 }
 
+/* IDE */
+
+#ide.ide {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 25px 0 15px 0;
+}
+
+#idePage.ide {
+    background: #0c0c0c;
+    position: relative;
+    width: 100%;
+    padding: 200px 0 15px 0;
+}
+
+.ide .logo img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ide .btn {
+    padding: 20px;
+    margin: 15px;
+}
+
+.ide .ide-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
 /* Alchemia */
 
 #alchemia.alchemia {
-    background: #0c0c0c;
     position: relative;
     width: 100%;
     padding: 25px 0 15px 0;
